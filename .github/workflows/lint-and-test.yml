@@ -62,9 +62,11 @@ jobs:
 
       - name: Deploy latest ArgoCD CRDs when testing ArgoCD extensions
         if: |
-          contains(steps.list-changed.outputs.changed_charts, 'argocd-image-updater')
+          contains(steps.list-changed.outputs.changed_charts, 'argocd-image-updater') ||
+          contains(steps.list-changed.outputs.changed_charts, 'argocd-apps')
         run: |
-          kubectl apply -f charts/argo-cd/templates/crds
+          ls templates/crds/* | xargs -r -L 1 helm template . -s ${@} | kubectl apply -f -
+        working-directory: ./charts/argo-cd
 
       - name: Skip HPA tests of ArgoCD
         if: contains(steps.list-changed.outputs.changed_charts, 'argo-cd')
