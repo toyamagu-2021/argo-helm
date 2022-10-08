@@ -65,6 +65,8 @@ jobs:
           contains(steps.list-changed.outputs.changed_charts, 'argocd-image-updater') ||
           contains(steps.list-changed.outputs.changed_charts, 'argocd-apps')
         run: |
+          helm repo add dandydeveloper https://dandydeveloper.github.io/charts/
+          helm dependency build .
           ls templates/crds/* | xargs -r -L 1 helm template . -s ${@} | kubectl apply -f -
         working-directory: ./charts/argo-cd
 
