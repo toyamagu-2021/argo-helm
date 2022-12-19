@@ -1588,6 +1588,37 @@ entries:
   argo-cd:
   - annotations:
       artifacthub.io/changes: |
+        - "[chore]: Update ArgoCD to v2.5.5"
+    apiVersion: v2
+    appVersion: v2.5.5
+    created: "2022-12-19T12:07:15.03781529Z"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts/
+      version: 4.22.3
+    description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: dbeed961d95503bff622a252d0332234c423b8c1497c71fa91d81e3c59d52ee3
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-cd
+    sources:
+    - https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd
+    - https://github.com/argoproj/argo-cd
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argo-cd-5.16.7/argo-cd-5.16.7.tgz
+    version: 5.16.7
+  - annotations:
+      artifacthub.io/changes: |
         - "[Changed]: Synced ApplicationSet deployment with upstream manifest"
     apiVersion: v2
     appVersion: v2.4.14
@@ -11254,6 +11285,29 @@ entries:
   argo-events:
   - annotations:
       artifacthub.io/changes: |
+        - "[Added]: Ability to specify port for webhook deployment"
+    apiVersion: v2
+    appVersion: v1.7.3
+    created: "2022-12-19T12:07:15.180359536Z"
+    description: A Helm chart for Argo Events, the event-driven workflow automation
+      framework
+    digest: 6535dc940c6c9e2d7f8d7890357af02225e67fe05d35b31fe1ae4cc2ce0b38bf
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argoproj.github.io/argo-events/assets/logo.png
+    keywords:
+    - argoproj
+    - argo-events
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-events
+    sources:
+    - https://github.com/argoproj/argo-events
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argo-events-2.0.9/argo-events-2.0.9.tgz
+    version: 2.0.9
+  - annotations:
+      artifacthub.io/changes: |
         - "[Changed]: Upgrade Argo events controller to v1.7.3"
     apiVersion: v2
     appVersion: v1.7.3
@@ -13330,6 +13384,27 @@ entries:
     - argo-rollouts-0.1.0.tgz
     version: 0.1.0
   argo-workflows:
+  - annotations:
+      artifacthub.io/changes: |
+        - "[Added]: Support nodeEvents property to workflow-controller-configmap"
+        - "[Added]: Support kubeConfig property to workflow-controller-configmap"
+    apiVersion: v2
+    appVersion: v3.4.4
+    created: "2022-12-19T12:07:15.304346978Z"
+    description: A Helm chart for Argo Workflows
+    digest: ab79387f2c194862620734119d5d17f98f7fa921bbb17616393eb4ed3f1168d7
+    home: https://github.com/argoproj/argo-helm
+    icon: https://raw.githubusercontent.com/argoproj/argo-workflows/master/docs/assets/argo.png
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-workflows
+    sources:
+    - https://github.com/argoproj/argo-workflows
+    type: application
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argo-workflows-0.22.3/argo-workflows-0.22.3.tgz
+    version: 0.22.3
   - annotations:
       artifacthub.io/changes: |
         - "[Changed]: Upgrade ArgoWorkflows to v3.4.1"
@@ -15614,6 +15689,27 @@ entries:
   argocd-apps:
   - annotations:
       artifacthub.io/changes: |
+        - "[Added]: Support sourceNamespaces for AppProject"
+    apiVersion: v2
+    created: "2022-12-19T12:07:15.44988877Z"
+    description: A Helm chart for managing additional Argo CD Applications and Projects
+    digest: 35e8bdcb2bce1975590215c6a13336bf9e7e4e8539c3bc4c7112bf220ae6582d
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argocd-apps
+    type: application
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argocd-apps-0.0.5/argocd-apps-0.0.5.tgz
+    version: 0.0.5
+  - annotations:
+      artifacthub.io/changes: |
         - "[Added]: Add ApplicationSets"
     apiVersion: v2
     created: "2022-10-12T08:51:48.405217484Z"
@@ -16773,4 +16869,4 @@ entries:
     urls:
     - argocd-notifications-1.0.0.tgz
     version: 1.0.0
-generated: "2022-10-12T08:51:48.690154066Z"
+generated: "2022-12-19T12:07:15.451895567Z"
