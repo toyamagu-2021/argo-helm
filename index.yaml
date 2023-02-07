@@ -1588,6 +1588,38 @@ entries:
   argo-cd:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: Configurable dnsPolicy / hostNetwork
+    apiVersion: v2
+    appVersion: v2.5.10
+    created: "2023-02-07T05:26:48.899524999Z"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts/
+      version: 4.22.4
+    description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: aa131e34965976cb13a2e2268d9c63a5e6007b57b3bd593616faae293303b8fb
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-cd
+    sources:
+    - https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd
+    - https://github.com/argoproj/argo-cd
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argo-cd-5.19.15/argo-cd-5.19.15.tgz
+    version: 5.19.15
+  - annotations:
+      artifacthub.io/changes: |
         - "[chore]: Update ArgoCD to v2.5.5"
     apiVersion: v2
     appVersion: v2.5.5
@@ -11285,6 +11317,30 @@ entries:
   argo-events:
   - annotations:
       artifacthub.io/changes: |
+        - kind: fixed
+          description: Align changelog structure to show changelogs on Artifact Hub
+    apiVersion: v2
+    appVersion: v1.7.5
+    created: "2023-02-07T05:26:49.061381118Z"
+    description: A Helm chart for Argo Events, the event-driven workflow automation
+      framework
+    digest: 652d5f2c8614fa602a75b7bc7b18b97b89a18ac0a5950156de34d8491cd3ebaf
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argoproj.github.io/argo-events/assets/logo.png
+    keywords:
+    - argoproj
+    - argo-events
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-events
+    sources:
+    - https://github.com/argoproj/argo-events
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argo-events-2.1.2/argo-events-2.1.2.tgz
+    version: 2.1.2
+  - annotations:
+      artifacthub.io/changes: |
         - "[Added]: Ability to specify port for webhook deployment"
     apiVersion: v2
     appVersion: v1.7.3
@@ -12342,6 +12398,29 @@ entries:
   argo-rollouts:
   - annotations:
       artifacthub.io/changes: |
+        - kind: fixed
+          description: Align changelog structure to show changelogs on Artifact Hub
+    apiVersion: v2
+    appVersion: v1.4.0
+    created: "2023-02-07T05:26:49.219912605Z"
+    description: A Helm chart for Argo Rollouts
+    digest: b288ca4bb6d5490a8b57d8c1cd2c28e98e85a883d3094abc5f53c068c58275ac
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argoproj.github.io/argo-rollouts/assets/logo.png
+    keywords:
+    - argoproj
+    - argo-rollouts
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-rollouts
+    sources:
+    - https://github.com/argoproj/argo-rollouts
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argo-rollouts-2.22.2/argo-rollouts-2.22.2.tgz
+    version: 2.22.2
+  - annotations:
+      artifacthub.io/changes: |
         - "[Changed]: Upgrade ArgoRollouts to v1.3.1"
     apiVersion: v2
     appVersion: v1.3.1
@@ -13384,6 +13463,27 @@ entries:
     - argo-rollouts-0.1.0.tgz
     version: 0.1.0
   argo-workflows:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
+          description: Align changelog structure to show changelogs on Artifact Hub
+    apiVersion: v2
+    appVersion: v3.4.4
+    created: "2023-02-07T05:26:49.371918832Z"
+    description: A Helm chart for Argo Workflows
+    digest: b118f94093d31f0b4814296903500397499bec84df99a1b6acc2672bd2e08965
+    home: https://github.com/argoproj/argo-helm
+    icon: https://raw.githubusercontent.com/argoproj/argo-workflows/master/docs/assets/argo.png
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-workflows
+    sources:
+    - https://github.com/argoproj/argo-workflows
+    type: application
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argo-workflows-0.22.9/argo-workflows-0.22.9.tgz
+    version: 0.22.9
   - annotations:
       artifacthub.io/changes: |
         - "[Added]: Support nodeEvents property to workflow-controller-configmap"
@@ -15689,6 +15789,28 @@ entries:
   argocd-apps:
   - annotations:
       artifacthub.io/changes: |
+        - kind: fixed
+          description: Align changelog structure to show changelogs on Artifact Hub
+    apiVersion: v2
+    created: "2023-02-07T05:26:49.554448644Z"
+    description: A Helm chart for managing additional Argo CD Applications and Projects
+    digest: 6d0c868a4c2bd9766b699430547eba4361136941ab567a21fa3e9c877380be1c
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argocd-apps
+    type: application
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argocd-apps-0.0.7/argocd-apps-0.0.7.tgz
+    version: 0.0.7
+  - annotations:
+      artifacthub.io/changes: |
         - "[Added]: Support sourceNamespaces for AppProject"
     apiVersion: v2
     created: "2022-12-19T12:07:15.44988877Z"
@@ -15751,6 +15873,30 @@ entries:
     - https://github.com/argoproj/argo-helm/releases/download/argocd-apps-0.0.1/argocd-apps-0.0.1.tgz
     version: 0.0.1
   argocd-image-updater:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Update Argo CD Image Updater to v0.12.2
+    apiVersion: v2
+    appVersion: v0.12.2
+    created: "2023-02-07T05:26:49.696711079Z"
+    description: A Helm chart for Argo CD Image Updater, a tool to automatically update
+      the container images of Kubernetes workloads which are managed by Argo CD
+    digest: 33e6cc0031a54786df8397d4cfa18fb252377c0cceb1e10f1ceaa92cc1e7f917
+    home: https://github.com/argoproj-labs/argocd-image-updater
+    icon: https://argocd-image-updater.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argocd-image-updater
+    type: application
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argocd-image-updater-0.8.4/argocd-image-updater-0.8.4.tgz
+    version: 0.8.4
   - annotations:
       artifacthub.io/changes: |
         - "[Added]: Add support for additional initContainers and additional volume/volumeMounts"
@@ -16869,4 +17015,4 @@ entries:
     urls:
     - argocd-notifications-1.0.0.tgz
     version: 1.0.0
-generated: "2022-12-19T12:07:15.451895567Z"
+generated: "2023-02-07T05:26:49.699273003Z"
