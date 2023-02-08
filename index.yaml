@@ -1588,6 +1588,38 @@ entries:
   argo-cd:
   - annotations:
       artifacthub.io/changes: |
+        - kind: fixed
+          description: Sync latest ApplicationSet CRD
+    apiVersion: v2
+    appVersion: v2.6.0
+    created: "2023-02-08T11:03:15.024424344Z"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts/
+      version: 4.22.4
+    description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: 9969695d5e4196472ef098348f6afa11fb5daf552d8bd3997d45b2803a469a87
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-cd
+    sources:
+    - https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd
+    - https://github.com/argoproj/argo-cd
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argo-cd-5.20.1/argo-cd-5.20.1.tgz
+    version: 5.20.1
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: Configurable dnsPolicy / hostNetwork
     apiVersion: v2
@@ -13465,6 +13497,27 @@ entries:
   argo-workflows:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Upgrade Argo Workflows to v3.4.5
+    apiVersion: v2
+    appVersion: v3.4.5
+    created: "2023-02-08T11:03:15.202599523Z"
+    description: A Helm chart for Argo Workflows
+    digest: c17f76a8638ba6fe0044af9e425ca4712749921e4489f8718fdd455d6333844d
+    home: https://github.com/argoproj/argo-helm
+    icon: https://raw.githubusercontent.com/argoproj/argo-workflows/master/docs/assets/argo.png
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-workflows
+    sources:
+    - https://github.com/argoproj/argo-workflows
+    type: application
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argo-workflows-0.22.10/argo-workflows-0.22.10.tgz
+    version: 0.22.10
+  - annotations:
+      artifacthub.io/changes: |
         - kind: fixed
           description: Align changelog structure to show changelogs on Artifact Hub
     apiVersion: v2
@@ -17015,4 +17068,4 @@ entries:
     urls:
     - argocd-notifications-1.0.0.tgz
     version: 1.0.0
-generated: "2023-02-07T05:26:49.699273003Z"
+generated: "2023-02-08T11:03:15.206505031Z"
