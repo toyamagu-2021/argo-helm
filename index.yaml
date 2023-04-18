@@ -1589,6 +1589,38 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: fixed
+          description: Namespace field for some namespaced resources needs to be evaluated via helm root scope
+    apiVersion: v2
+    appVersion: v2.6.7
+    created: "2023-04-18T02:24:33.357211067Z"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts/
+      version: 4.22.5
+    description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: b71ea45f3157867954677fea7305ae3753683b2141862ea39dd43d62fc701cca
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-cd
+    sources:
+    - https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd
+    - https://github.com/argoproj/argo-cd
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argo-cd-5.29.1/argo-cd-5.29.1.tgz
+    version: 5.29.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
           description: Fixed invalid ApplicationSet progressive sync parameter
     apiVersion: v2
     appVersion: v2.6.1
@@ -11382,6 +11414,30 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: fixed
+          description: add namespace field for namespace scoped resources
+    apiVersion: v2
+    appVersion: v1.7.6
+    created: "2023-04-18T02:24:33.516385327Z"
+    description: A Helm chart for Argo Events, the event-driven workflow automation
+      framework
+    digest: e47be769601f362841d8ed1fb3816aadf1eb99a67a514d5d4f5861c6e52b4dbe
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argoproj.github.io/argo-events/assets/logo.png
+    keywords:
+    - argoproj
+    - argo-events
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-events
+    sources:
+    - https://github.com/argoproj/argo-events
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argo-events-2.2.0/argo-events-2.2.0.tgz
+    version: 2.2.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
           description: Align changelog structure to show changelogs on Artifact Hub
     apiVersion: v2
     appVersion: v1.7.5
@@ -12462,6 +12518,29 @@ entries:
   argo-rollouts:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: Ability to provide additional volumes and volumeMounts
+    apiVersion: v2
+    appVersion: v1.4.1
+    created: "2023-04-18T02:24:33.645724219Z"
+    description: A Helm chart for Argo Rollouts
+    digest: c5054288f42d1588808982cd39424b4fffd2f9c1031808620c7a5c72424ee290
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argoproj.github.io/argo-rollouts/assets/logo.png
+    keywords:
+    - argoproj
+    - argo-rollouts
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-rollouts
+    sources:
+    - https://github.com/argoproj/argo-rollouts
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argo-rollouts-2.25.0/argo-rollouts-2.25.0.tgz
+    version: 2.25.0
+  - annotations:
+      artifacthub.io/changes: |
         - kind: fixed
           description: Align changelog structure to show changelogs on Artifact Hub
     apiVersion: v2
@@ -13527,6 +13606,27 @@ entries:
     - argo-rollouts-0.1.0.tgz
     version: 0.1.0
   argo-workflows:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Add option for workflow controller to read all secrets.
+    apiVersion: v2
+    appVersion: v3.4.7
+    created: "2023-04-18T02:24:33.800599009Z"
+    description: A Helm chart for Argo Workflows
+    digest: fe0b02c4b3262c28a374c6651e01e30a5c7fb874cdaa21d8af7ad567376a4f47
+    home: https://github.com/argoproj/argo-helm
+    icon: https://raw.githubusercontent.com/argoproj/argo-workflows/master/docs/assets/argo.png
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-workflows
+    sources:
+    - https://github.com/argoproj/argo-workflows
+    type: application
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argo-workflows-0.24.1/argo-workflows-0.24.1.tgz
+    version: 0.24.1
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -15898,6 +15998,28 @@ entries:
         - kind: added
           description: Multiple sources for Application and ApplicationSet
     apiVersion: v2
+    created: "2023-04-18T02:24:33.945045147Z"
+    description: A Helm chart for managing additional Argo CD Applications and Projects
+    digest: 2cccc1279f88792f113c4cc5474f9d0803692295b95c36462cb8d653054f16d2
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argocd-apps
+    type: application
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argocd-apps-0.0.9/argocd-apps-0.0.9.tgz
+    version: 0.0.9
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Multiple sources for Application and ApplicationSet
+    apiVersion: v2
     created: "2023-02-14T08:17:44.558040033Z"
     description: A Helm chart for managing additional Argo CD Applications and Projects
     digest: 89743b337a335eb87d3531ced90b73546e3586d1b396077ef660084766443622
@@ -16001,6 +16123,30 @@ entries:
     - https://github.com/argoproj/argo-helm/releases/download/argocd-apps-0.0.1/argocd-apps-0.0.1.tgz
     version: 0.0.1
   argocd-image-updater:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
+          description: add namespace field for namespace scoped resources
+    apiVersion: v2
+    appVersion: v0.12.2
+    created: "2023-04-18T02:24:34.07790506Z"
+    description: A Helm chart for Argo CD Image Updater, a tool to automatically update
+      the container images of Kubernetes workloads which are managed by Argo CD
+    digest: 86594ffd3e95a05687135d0092f9d80c67713a69c5013fad92b495aaf63ab47c
+    home: https://github.com/argoproj-labs/argocd-image-updater
+    icon: https://argocd-image-updater.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argocd-image-updater
+    type: application
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argocd-image-updater-0.9.0/argocd-image-updater-0.9.0.tgz
+    version: 0.9.0
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -17143,4 +17289,4 @@ entries:
     urls:
     - argocd-notifications-1.0.0.tgz
     version: 1.0.0
-generated: "2023-02-14T08:17:44.559843973Z"
+generated: "2023-04-18T02:24:34.080110798Z"
