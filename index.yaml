@@ -12519,6 +12519,29 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: added
+          description: Ability to provide service monitor relabeling configs
+    apiVersion: v2
+    appVersion: v1.4.1
+    created: "2023-04-25T12:06:25.3615693Z"
+    description: A Helm chart for Argo Rollouts
+    digest: 31eb0049bc20012b11a2685009b3057888cedde3db0b914728afc7df596d0459
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argoproj.github.io/argo-rollouts/assets/logo.png
+    keywords:
+    - argoproj
+    - argo-rollouts
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-rollouts
+    sources:
+    - https://github.com/argoproj/argo-rollouts
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argo-rollouts-2.26.0/argo-rollouts-2.26.0.tgz
+    version: 2.26.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
           description: Ability to provide additional volumes and volumeMounts
     apiVersion: v2
     appVersion: v1.4.1
@@ -13606,6 +13629,27 @@ entries:
     - argo-rollouts-0.1.0.tgz
     version: 0.1.0
   argo-workflows:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Add Prometheus ServiceMonitor relabelings, metricRelabelings & targetLabels
+    apiVersion: v2
+    appVersion: v3.4.7
+    created: "2023-04-25T12:06:25.57250934Z"
+    description: A Helm chart for Argo Workflows
+    digest: 300b3775083576501816147b6dba7830854e89c8d88e5e0ff001146c0dd136fb
+    home: https://github.com/argoproj/argo-helm
+    icon: https://raw.githubusercontent.com/argoproj/argo-workflows/master/docs/assets/argo.png
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-workflows
+    sources:
+    - https://github.com/argoproj/argo-workflows
+    type: application
+    urls:
+    - https://github.com/toyamagu-2021/argo-helm/releases/download/argo-workflows-0.25.1/argo-workflows-0.25.1.tgz
+    version: 0.25.1
   - annotations:
       artifacthub.io/changes: |
         - kind: added
@@ -17289,4 +17333,4 @@ entries:
     urls:
     - argocd-notifications-1.0.0.tgz
     version: 1.0.0
-generated: "2023-04-18T02:24:34.080110798Z"
+generated: "2023-04-25T12:06:25.573910176Z"
